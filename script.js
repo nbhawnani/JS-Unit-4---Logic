@@ -1,58 +1,77 @@
-/*
-let a=-10, b=50;
+//condition statements using if else if else commands
+let a=50, b=50.23;
 
-if (a>=25){
-  console.log('a is greater than or equal to 25');
-}else if (a<10){
-  console.log('a is less than 10')
-} else{
-  console.log('a is between 10 and 24');
-}
-*/
-
-/*
->
-<
->=
-<=
-==
-!=
-=== data value and data type
-!==
-*/
-
-
-
-
-/*
-
-let mike = "false";
-if (mike === true) {
-alert("Mike is in the class");
-} else {
-alert("Mike is absent today");
-}
-
-*/
-/*
-// ==true is implied in the condition 
-
-let a=true; //boolean
-
-if (a){
-  console.log('a is true');
+if (a==b){
+  console.log("a is equal to b")
+}else if (a>b){
+  console.log("a is greater than b")
+  
 }else{
-  console.log('a is false');
+  //a < b
+  console.log("a is lesser than b")
+}
+
+// = is the assignment operator 
+//Comparison operators
+//>, >=, <, <=, ==, !=
+
+// 0 results to a false
+let num=0
+if (num){
+  console.log("A valid number")
+}
+else{
+  console.log("0 results in a false condition")
+}
+
+//Using typeof in the condition
+let a1="50"
+
+if (typeof(a1)=="number"){
+  console.log("a is a number")
+}else{
+  console.log("a is not a number")
+}
+/*
+// "" empty string, null and undefined results in a false
+// all other values result in a true
+let strA="jghfhgdhhdh"
+if (strA){
+  alert(strA,"condition is true")
+}
+else{
+  alert(strA,"condition is false")
 }
 */
 
+//strict equal comparison === checks for equality in data type as well as value
+let num2="100"
 
-
-
-let a=75; //number
-
-if (a!=75){
-  console.log('a is not 75');
-}else{
-  console.log('a is 75');
+if (num2===100){
+  console.log("data type and values match")
 }
+else{
+  console.log("Data type and values both do not match")
+}
+
+//compound statements using logical operators &&, ||, !
+// && - requires all sub conditions to be true
+// || - requires only 1 of the sub conditions to be true
+// ! - reverses the value of the condition
+
+let boolRainy=false
+let intTemp=70
+
+if (boolRainy && intTemp>=75){
+  console.log("Let's stay indoors")
+}else if( !boolRainy && intTemp>=75){
+  console.log("Let's go out")
+}else{
+  console.log("Its cold!")
+}
+
+if (!boolRainy || intTemp>=75){
+  console.log("Either ways let's go out")
+}
+
+
